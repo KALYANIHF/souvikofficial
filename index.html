@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cv.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Souvik Mondal</title>
+  </head>
+  <body
+    class="bg-white text-black selection:bg-black selection:text-white dark:bg-black dark:text-white font-sans"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- 2) Tailwind config BEFORE CDN script so dark mode works -->
+    <script>
+      tailwind = { config: { darkMode: "class" } };
+    </script>
+    <style>
+      /* Subtle grid texture like the reference */
+      .bg-grid {
+        background-image: radial-gradient(
+            transparent 1px,
+            rgba(255, 255, 255, 0.05) 1px
+          ),
+          radial-gradient(transparent 1px, rgba(255, 255, 255, 0.05) 1px);
+        background-size: 24px 24px, 24px 24px;
+        background-position: 0 0, 12px 12px;
+        pointer-events: none;
+      }
+    </style>
+  </body>
+</html>
