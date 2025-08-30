@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileImage from "../assets/finalcrop.png";
+import PersonalCv from "../assets/myresume/SouvikUpdated.pdf";
 function HeroSection() {
   return (
     <section className="relative">
@@ -18,22 +19,24 @@ function HeroSection() {
             </p>
             <div className="mt-6 flex gap-3">
               <a
-                href="#"
+                href={PersonalCv}
+                download={"SouvikUpdated.pdf"}
                 className="inline-flex items-center justify-center rounded-lg bg-white px-4 py-2 text-xs font-medium text-black hover:bg-gray-200"
               >
                 Download Resume
               </a>
               <a
-                href="#projects"
+                href={PersonalCv}
+                target="_blank"
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-4 py-2 text-xs font-medium hover:bg-white/10"
               >
-                View My Work
+                View My Resume
               </a>
             </div>
 
             <div className="mt-10 grid grid-cols-3 gap-4 text-center">
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
-                <div className="text-2xl font-bold">50+</div>
+                <div className="text-2xl font-bold">40+</div>
                 <div className="mt-1 text-[11px] text-white/60">Projects</div>
               </div>
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
@@ -43,7 +46,7 @@ function HeroSection() {
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">100%</div>
                 <div className="mt-1 text-[11px] text-white/60">
-                  Satisfaction
+                  Focused & Provide Solution to the table
                 </div>
               </div>
             </div>

@@ -28,7 +28,7 @@ function Header() {
             </a>
             <nav className="hidden md:flex items-center gap-6 text-xs text-black/70 dark:text-white/70">
               <Link className="hover:text-white" to="#skills">
-                Skills {theme}
+                Skills
               </Link>
               <Link className="hover:text-white" to="#experience">
                 Experience
