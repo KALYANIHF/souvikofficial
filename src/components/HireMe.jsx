@@ -58,7 +58,7 @@ function HireMe() {
       >
         <a
           href="/hireme"
-          className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-2 text-sm font-medium text-black hover:bg-gray-200"
+          className="inline-flex items-center justify-center rounded-lg bg-gray-200 dark:bg-white px-5 py-2 text-sm font-medium text-black hover:bg-gray-200"
         >
           Hire Me
         </a>
