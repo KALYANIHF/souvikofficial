@@ -44,10 +44,10 @@ function Certifications() {
               </div>
 
               <p className="grid grid-flow-row-dense gap-2 items-center grid-cols-2">
-                <a href={item.path} rel="noopener noreferrer" target="_blank">
+                <a href={item.path} target="_blank">
                   <GrView />
                 </a>
-                <a href={item.path} download={item.path}>
+                <a href={item.path} download={`${item.certificate}.pdf`}>
                   <FaDownload />
                 </a>
               </p>
