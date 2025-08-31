@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import {
   BrowserRouter as Router,
@@ -9,14 +9,25 @@ import {
   useSearchParams,
 } from "react-router";
 function Header() {
-  const [theme, setTheme] = useState("dark");
+  const [darkMode, setDarkMode] = useState(
+    () =>
+      localStorage.getItem("theme") === "dark" ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
+
   const themeToggle = (e) => {
     e.preventDefault();
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
+    setDarkMode(!darkMode);
   };
   return (
     <Router>
@@ -27,22 +38,22 @@ function Header() {
               Souvik Mondal
             </a>
             <nav className="hidden md:flex items-center gap-6 text-xs text-black/70 dark:text-white/70">
-              <Link className="hover:text-white" to="#skills">
+              <Link className="hover:text-dark" to="#skills">
                 Skills
               </Link>
-              <Link className="hover:text-white" to="#experience">
+              <Link className="hover:text-dark" to="#experience">
                 Experience
               </Link>
-              <Link className="hover:text-white" to="#projects">
+              <Link className="hover:text-dark" to="#projects">
                 Projects
               </Link>
-              <Link className="hover:text-white" to="#hireme">
+              <Link className="hover:text-dark" to="#hireme">
                 Hire Me
               </Link>
-              <Link className="hover:text-white" to="#certificate">
+              <Link className="hover:text-dark" to="#certificate">
                 My Certification
               </Link>
-              <Link className="hover:text-white" to="#contact">
+              <Link className="hover:text-dark" to="#contact">
                 Contact
               </Link>
             </nav>
@@ -53,7 +64,7 @@ function Header() {
               aria-label="Toggle theme"
               onClick={themeToggle}
             >
-              {theme == "dark" ? <FaSun /> : <FaMoon />}
+              {darkMode ? <FaSun /> : <FaMoon />}
             </button>
           </div>
         </div>

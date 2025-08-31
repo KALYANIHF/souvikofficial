@@ -1,4 +1,7 @@
 import React from "react";
+import generalinfoAppImg from "../assets/projectThumbnail/generalinfoApp.png";
+import vanillafeedbackApp from "../assets/projectThumbnail/vanillajsFeedbackApp.png";
+import reactFeedbackApp from "../assets/projectThumbnail/reactFeedbackApp.png";
 
 function Projects() {
   return (
@@ -8,7 +11,7 @@ function Projects() {
     >
       <div className="text-center" data-aos="fade-up">
         <h2 className="text-3xl font-bold">Featured Projects</h2>
-        <p className="mt-2 text-sm text-white/60">
+        <p className="mt-2 text-sm text-dark/60">
           A selection demonstrating full‑stack and DevOps work.
         </p>
       </div>
@@ -19,25 +22,27 @@ function Projects() {
           data-aos="fade-up"
         >
           <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+            src={generalinfoAppImg}
             alt="Project"
             className="h-40 w-full object-cover"
           />
           <div className="p-6">
-            <h3 className="text-sm font-semibold">E‑Commerce Platform</h3>
+            <h3 className="text-sm font-semibold">
+              Portfolio Website for Personal Info
+            </h3>
             <p className="mt-2 text-sm text-black/70 dark:text-white/70">
-              Full‑stack solution with authentication, payments, and admin
-              dashboard.
+              This is my portfolio website (it is still under development and
+              improvement)
             </p>
             <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 Next.js
               </span>
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                Node
+                Javascript
               </span>
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                PostgreSQL
+                HTML
               </span>
             </div>
             <div className="mt-4 flex gap-2">
@@ -45,15 +50,22 @@ function Projects() {
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
                 href="#"
               >
-                Code
+                CSS
               </a>
               <a
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
                 href="#"
               >
-                Demo
+                Json Mock Server
               </a>
             </div>
+            <a
+              href="https://my-resume-nine-topaz.vercel.app/"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View Project →
+            </a>
           </div>
         </article>
 
@@ -63,25 +75,29 @@ function Projects() {
           data-aos-delay="60"
         >
           <img
-            src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"
+            src={reactFeedbackApp}
             alt="Project"
             className="h-40 w-full object-cover"
           />
           <div className="p-6">
-            <h3 className="text-sm font-semibold">DevOps Automation Suite</h3>
+            <h3 className="text-sm font-semibold">
+              A Feedback App build using react Library
+            </h3>
             <p className="mt-2 text-sm text-black/70 dark:text-white/70">
-              CI/CD pipelines using Docker & Kubernetes; deployment time cut by
-              70%.
+              Try our web-based feedback application that simplifies user
+              engagement. Submit ratings, provide feedback, categorize
+              responses, and analyze statistics—all in a modern design with
+              light and dark mode options!
             </p>
             <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                Docker
+                React JS
               </span>
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                Kubernetes
+                Node.js
               </span>
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                Terraform
+                HTML
               </span>
             </div>
             <div className="mt-4 flex gap-2">
@@ -89,15 +105,22 @@ function Projects() {
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
                 href="#"
               >
-                Code
+                CSS
               </a>
               <a
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
                 href="#"
               >
-                Demo
+                Javascript
               </a>
             </div>
+            <a
+              href="https://feedback-react-app-alpha.vercel.app/"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View Project →
+            </a>
           </div>
         </article>
 
@@ -107,26 +130,26 @@ function Projects() {
           data-aos-delay="120"
         >
           <img
-            src="https://t4.ftcdn.net/jpg/03/96/98/33/360_F_396983381_AcuGFHQbNn7D9eercXFpOecN7d7B5F66.jpg"
+            src={vanillafeedbackApp}
             alt="Project"
             className="h-40 w-full object-cover"
           />
           <div className="p-6">
             <h3 className="text-sm font-semibold">
-              Real‑time Analytics Dashboard
+              Real‑time Feedback App with VanillaJS
             </h3>
             <p className="mt-2 text-sm text-black/70 dark:text-white/70">
-              Interactive visualisations and streaming data ingestion.
+              this is a ES6 vanilla project with custom code feedback app
             </p>
             <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                React
+                Core Javascript (ES6)
               </span>
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                WebSockets
+                HTML
               </span>
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                D3
+                CSS
               </span>
             </div>
             <div className="mt-4 flex gap-2">
@@ -134,15 +157,22 @@ function Projects() {
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
                 href="#"
               >
-                Code
+                Procedural
               </a>
               <a
                 className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
                 href="#"
               >
-                Demo
+                Functional
               </a>
             </div>
+            <a
+              href="https://feedxinfo.netlify.app/"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View Project →
+            </a>
           </div>
         </article>
       </div>

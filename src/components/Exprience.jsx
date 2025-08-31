@@ -8,7 +8,7 @@ function Exprience() {
     >
       <div className="text-center" data-aos="fade-up">
         <h2 className="text-3xl font-bold">Professional Experience</h2>
-        <p className="mt-2 text-sm text-white/60">
+        <p className="mt-2 text-sm text-dark/60">
           Over 5 years building scalable products and platforms.
         </p>
       </div>
@@ -23,11 +23,11 @@ function Exprience() {
               <h3 className="text-sm font-semibold">
                 Senior Software Engineer
               </h3>
-              <div className="text-[11px] text-white/60">
+              <div className="text-[11px] text-dark/60">
                 CodeClouds (Kolkata) • From 12/2021 to Current • Hybrid
               </div>
             </div>
-            <div className="text-[11px] text-white/50 flex flex-wrap gap-2">
+            <div className="text-[11px] text-dark/50 flex flex-wrap gap-2">
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 React
               </span>
@@ -87,7 +87,7 @@ function Exprience() {
               </span>
             </div>
           </div>
-          <p className="mt-3 text-sm text-black/70 dark:text-white/70">
+          <div className="mt-3 text-sm text-black/70 dark:text-dark/70">
             <ul className="list-none space-y-2 text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
               <li className="flex items-start">
                 <span className="mt-1 mr-2 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0"></span>
@@ -118,7 +118,7 @@ function Exprience() {
                 while keeping uptime at 99.9%.
               </li>
             </ul>
-          </p>
+          </div>
         </article>
 
         <article
@@ -131,11 +131,11 @@ function Exprience() {
               <h3 className="text-sm font-semibold">
                 Software Development Engineer
               </h3>
-              <div className="text-[11px] text-white/60">
+              <div className="text-[11px] text-dark/60">
                 Netware (Kolkata). • From 06/2021 to 10/2021 • remote
               </div>
             </div>
-            <div className="text-[11px] text-white/50 flex flex-wrap gap-2">
+            <div className="text-[11px] text-dark/50 flex flex-wrap gap-2">
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 ES6
               </span>
@@ -165,7 +165,7 @@ function Exprience() {
               </span>
             </div>
           </div>
-          <p className="mt-3 text-sm text-black/70 dark:text-white/70">
+          <div className="mt-3 text-sm text-black/70 dark:text-dark/70">
             <ul className="list-none space-y-2 text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
               <li className="flex items-start">
                 <span className="mt-1 mr-2 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0"></span>
@@ -180,7 +180,7 @@ function Exprience() {
                 rendering), improving usability & reducing errors by 25%.
               </li>
             </ul>
-          </p>
+          </div>
         </article>
 
         <article
@@ -191,11 +191,11 @@ function Exprience() {
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <h3 className="text-sm font-semibold">Technology Associate</h3>
-              <div className="text-[11px] text-white/60">
+              <div className="text-[11px] text-dark/60">
                 A Pixel House (Kolkata) • From 01/2020 to 04/2021 • remote
               </div>
             </div>
-            <div className="text-[11px] text-white/50 flex flex-wrap gap-2">
+            <div className="text-[11px] text-dark/50 flex flex-wrap gap-2">
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 REST API
               </span>
@@ -228,7 +228,7 @@ function Exprience() {
               </span>
             </div>
           </div>
-          <p className="mt-3 text-sm text-black/70 dark:text-white/70">
+          <div className="mt-3 text-sm text-black/70 dark:text-dark/70">
             <ul className="list-none space-y-2 text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
               <li className="flex items-start">
                 <span className="mt-1 mr-2 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0"></span>
@@ -244,7 +244,7 @@ function Exprience() {
                 20%.
               </li>
             </ul>
-          </p>
+          </div>
         </article>
       </div>
     </section>

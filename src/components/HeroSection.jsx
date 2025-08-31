@@ -10,7 +10,7 @@ function HeroSection() {
           {/* <!-- Left --> */}
           <div data-aos="fade-up">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Hello, I'm <span className="text-white">Souvik</span>
+              Hello, I'm <span className="text-dark">Souvik</span>
             </h1>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-black/70 dark:text-white/70">
               Senior Software Engineer crafting digital experiences with 5+
@@ -21,7 +21,7 @@ function HeroSection() {
               <a
                 href={PersonalCv}
                 download={"SouvikUpdated.pdf"}
-                className="inline-flex items-center justify-center rounded-lg bg-white px-4 py-2 text-xs font-medium text-black hover:bg-gray-200"
+                className="inline-flex items-center justify-center rounded-lg bg-gray-200 dark:bg-white px-4 py-2 text-xs font-medium text-black hover:bg-gray-200"
               >
                 Download Resume
               </a>
@@ -37,15 +37,15 @@ function HeroSection() {
             <div className="mt-10 grid grid-cols-3 gap-4 text-center">
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">40+</div>
-                <div className="mt-1 text-[11px] text-white/60">Projects</div>
+                <div className="mt-1 text-[11px] text-dark/60">Projects</div>
               </div>
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">5+</div>
-                <div className="mt-1 text-[11px] text-white/60">Years Exp</div>
+                <div className="mt-1 text-[11px] text-dark/60">Years Exp</div>
               </div>
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">100%</div>
-                <div className="mt-1 text-[11px] text-white/60">
+                <div className="mt-1 text-[11px] text-dark/60">
                   Focused & Provide Solution to the table
                 </div>
               </div>

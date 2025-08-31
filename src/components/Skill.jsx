@@ -8,7 +8,7 @@ function Skill() {
     >
       <div className="text-center" data-aos="fade-up">
         <h2 className="text-3xl font-bold">Technical Skills</h2>
-        <p className="mt-2 text-sm text-white/60">
+        <p className="mt-2 text-sm text-dark/60">
           Comprehensive expertise across modern development stacks.
         </p>
       </div>
@@ -32,7 +32,10 @@ function Skill() {
               PHP
             </span>
             <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
-              Python
+              SQL
+            </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              HCL
             </span>
           </div>
         </div>
@@ -81,6 +84,12 @@ function Skill() {
             <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
               Express
             </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              Fastify
+            </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              Deno
+            </span>
           </div>
         </div>
 
@@ -98,6 +107,9 @@ function Skill() {
             </span>
             <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
               MongoDB
+            </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              MariaDB
             </span>
           </div>
         </div>
@@ -136,6 +148,15 @@ function Skill() {
             </span>
             <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
               Vercel
+            </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              AKS
+            </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              GKE
+            </span>
+            <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2.5 py-1">
+              EKS
             </span>
           </div>
         </div>
