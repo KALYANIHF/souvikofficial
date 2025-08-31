@@ -43,7 +43,7 @@ function Certifications() {
                 {item.icon}
               </div>
 
-              <p className="grid md:grid-cols-2 lg:grid-cols-2 mt-3">
+              <p className="grid grid-flow-row-dense gap-2 items-center grid-cols-2">
                 <a href={item.path} rel="noopener noreferrer" target="_blank">
                   <GrView />
                 </a>
