@@ -1,27 +1,26 @@
 import { useState } from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import Skill from "./components/Skill";
-import Exprience from "./components/Exprience";
-import Projects from "./components/Projects";
-import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import HeroSection from "./components/HeroSection";
+import Home from "./pages/Home";
+import HireMe from "./pages/HireMe";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header />
-      <HeroSection />
-      <Skill />
-      <Exprience />
-      <Projects />
-      <Certifications />
-      <Contact />
-      <Footer />
+      <Router>
+        <Header />
+        <HeroSection />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hireme" element={<HireMe />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
