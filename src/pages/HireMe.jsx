@@ -1,4 +1,4 @@
-import ContactFromHireMe from "../components/contactFromHireMe";
+import ContactFromHireMe from "../components/ContactFromHireMe";
 function HireMe() {
   return (
     <>
