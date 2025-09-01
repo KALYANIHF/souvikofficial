@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileImage from "../assets/finalcrop.png";
+import ProfileImage from "../assets/souvik.png";
 import PersonalCv from "../assets/myresume/SouvikUpdated.pdf";
 function HeroSection() {
   return (
@@ -60,7 +60,7 @@ function HeroSection() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-full bg-white/5 blur-2xl"></div>
               <img
-                className="relative h-85 w-64 rounded-full border border-black/10 dark:border-white/10 object-cover shadow-[0_8px_40px_rgba(0,0,0,.5)]"
+                className="relative h-80 w-auto rounded-full border border-black/10 dark:border-white/10 object-cover shadow-[0_8px_40px_rgba(0,0,0,.5)]"
                 src={ProfileImage}
                 alt="Profile"
               />
