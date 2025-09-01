@@ -20,7 +20,7 @@ function HeroSection() {
             <div className="mt-6 flex gap-3">
               <a
                 href={PersonalCv}
-                download={"SouvikUpdated.pdf"}
+                download={"Souvik.pdf"}
                 className="inline-flex items-center justify-center rounded-lg bg-gray-200 dark:bg-white px-4 py-2 text-xs font-medium text-black hover:bg-gray-200"
               >
                 Download Resume
