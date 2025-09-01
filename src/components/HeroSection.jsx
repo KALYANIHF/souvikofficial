@@ -1,7 +1,19 @@
 import React from "react";
 import ProfileImage from "../assets/souvik.png";
 import PersonalCv from "../assets/myresume/SouvikRes.pdf";
+import { Link } from "react-router";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaInstagramSquare,
+} from "react-icons/fa";
+import { SiPexels } from "react-icons/si";
+import { BiFontSize } from "react-icons/bi";
 function HeroSection() {
+  const customIconSize = {
+    fontSize: "25px",
+  };
   return (
     <section className="relative">
       <div className="absolute inset-0 bg-grid"></div>
@@ -48,6 +60,45 @@ function HeroSection() {
                 <div className="mt-1 text-[11px] text-dark/60">
                   Focused & Provide Solution to the table
                 </div>
+              </div>
+            </div>
+            <div className="socialIcon mt-10 grid grid-cols-5 gap-1 text-center">
+              <div>
+                <Link to="https://github.com/KALYANIHF" target="_blank">
+                  <FaGithub style={customIconSize} />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="https://www.facebook.com/share/1CoSfCYDNS/?mibextid=wwXIfr"
+                  target="_blank"
+                >
+                  <FaFacebook style={customIconSize} />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="https://www.linkedin.com/in/souvikmondal-unix/"
+                  target="_blank"
+                >
+                  <FaLinkedin style={customIconSize} />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="https://www.instagram.com/souvikunixd?igsh=MWNldWxtbTVocGVteA%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <FaInstagramSquare style={customIconSize} />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="https://www.pexels.com/@souvik-mondal-2955175/"
+                  target="_blank"
+                >
+                  <SiPexels style={customIconSize} />
+                </Link>
               </div>
             </div>
           </div>
