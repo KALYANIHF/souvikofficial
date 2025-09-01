@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 function ContactFrom() {
+  const [formData, setFormData] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Thanks for submiting the form");
+    if (
+      formData.name !== "" &&
+      formData.email !== "" &&
+      formData.subject !== "" &&
+      formData.message !== ""
+    ) {
+      // check if the email is valid or not
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+        toast.error("Invalid email format");
+        return;
+      } else {
+        console.log("Form submitted successfully", formData);
+        // here i have to setup smtp server to send the email to me
+        // you can add your logic here to send the form data to the server or perform other actions
+
+        return;
+        // you can add your logic here to send the form data to the server or perform other actions
+      }
+    } else {
+      console.log("Please fill all the fields correctly");
+    }
+    // validate form data before submit make sure all the fileds have the proper value in them
+  };
+  const handleChange = (e) => {
+    setFormData((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
   };
   return (
     <form
@@ -17,21 +48,29 @@ function ContactFrom() {
           className="w-full rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-2 text-sm outline-none placeholder:text-black/40
            dark:placeholder:text-white/40"
           placeholder="Your Name"
+          name="name"
+          onChange={handleChange}
         />
         <input
           type="email"
           className="w-full rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-2 text-sm outline-none placeholder:text-black/40 dark:placeholder:text-white/40"
           placeholder="Your Email"
+          name="email"
+          onChange={handleChange}
         />
       </div>
       <input
         className="mt-4 w-full rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-2 text-sm outline-none placeholder:text-black/40 dark:placeholder:text-white/40"
         placeholder="Subject"
+        name="subject"
+        onChange={handleChange}
       />
       <textarea
         rows="4"
         className="mt-4 w-full rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-2 text-sm outline-none placeholder:text-black/40 dark:placeholder:text-white/40"
         placeholder="Your Message"
+        name="message"
+        onChange={handleChange}
       ></textarea>
       <button
         className="mt-4 inline-flex items-center justify-center rounded-lg bg-gray-200 dark:bg-white px-4 py-2 text-xs font-medium text-black hover:bg-gray-200"

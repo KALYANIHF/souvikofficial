@@ -4,9 +4,11 @@ import App from "./App.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
+import { ToastContainer, toast } from "react-toastify";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
+    <ToastContainer />
   </StrictMode>
 );
