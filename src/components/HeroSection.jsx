@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileImage from "../assets/souvik.png";
-import PersonalCv from "../assets/myresume/SouvikUpdated.pdf";
+import PersonalCv from "../assets/myresume/SouvikRes.pdf";
 function HeroSection() {
   return (
     <section className="relative">
