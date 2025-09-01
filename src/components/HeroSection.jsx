@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileImage from "../assets/souvik.png";
-import PersonalCv from "../assets/myresume/SouvikRes.pdf";
+import PersonalCv from "../assets/myresume/Souvik.pdf";
 import { Link } from "react-router";
 import {
   FaGithub,
