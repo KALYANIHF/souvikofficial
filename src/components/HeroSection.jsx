@@ -9,7 +9,6 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import { SiPexels } from "react-icons/si";
-import { BiFontSize } from "react-icons/bi";
 function HeroSection() {
   const customIconSize = {
     fontSize: "25px",
