@@ -45,7 +45,7 @@ function HeroSection() {
               </a>
             </div>
 
-            <div className="mt-10 grid grid-cols-3 gap-4 text-center">
+            <div className="custom-info mt-10 grid grid-cols-3 gap-4 text-center">
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">40+</div>
                 <div className="mt-1 text-[11px] text-dark/60">Projects</div>
