@@ -5,6 +5,9 @@ export const handler = async (event) => {
   try {
     const body = JSON.parse(event.body);
     const { name, email, subject, message } = body;
+    if (!name || !email || !subject || !message) {
+      return res.status(400).json({ error: "All Fields are required" });
+    }
     const params = {
       Destination: {
         ToAddresses: "marvel.sm.24@gmail.com",

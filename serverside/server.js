@@ -22,8 +22,9 @@ app.post("/contact", async (req, res) => {
   if (!name || !email || !subject || !message) {
     return res.status(400).json({ error: "All Fields are required" });
   }
+  console.log("hello");
   const params = {
-    Source: email, // verified sender
+    Source: "supportinfo@souvikofficial.live", // verified sender
     Destination: {
       ToAddresses: [process.env.RECEIVER_EMAIL], // your inbox
     },
@@ -37,6 +38,7 @@ app.post("/contact", async (req, res) => {
       },
     },
   };
+  console.log(params);
   try {
     const command = new SendEmailCommand(params);
     await sesClient.send(command);
