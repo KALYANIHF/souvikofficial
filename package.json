@@ -4,14 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"node ./serverside/server.js\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-sdk/client-ses": "^3.883.0",
+    "@aws-sdk/client-sesv2": "^3.879.0",
+    "@dotenvx/dotenvx": "^1.49.0",
     "@tailwindcss/vite": "^4.1.12",
     "aos": "^2.3.4",
+    "aws-sdk": "^2.1692.0",
+    "concurrently": "^9.2.1",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "nodemailer": "^7.0.6",
