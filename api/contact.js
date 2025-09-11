@@ -1,4 +1,6 @@
 import app from "../serverside/server.js";
-export default function handler(req, res) {
-  return app(req, res);
+import serverless from "serverless-http";
+const handler = serverless(app);
+export default function (req, res) {
+  return handler(req, res);
 }
