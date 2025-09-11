@@ -17,12 +17,14 @@ const sesClient = new SESClient({
   },
 });
 
-app.post("/contact", async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
   if (!name || !email || !subject || !message) {
     return res.status(400).json({ error: "All Fields are required" });
   }
-  console.log("hello");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return res.status(400).json({ error: "Invalid email format" });
+  }
   const params = {
     Source: "supportinfo@souvikofficial.live", // verified sender
     Destination: {

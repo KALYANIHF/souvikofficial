@@ -1,4 +1,4 @@
-import ContactFromHireMe from "../components/ContactFromHireMe";
+import ContactFrom from "../components/ContactFrom";
 function HireMe() {
   return (
     <>
@@ -50,7 +50,7 @@ function HireMe() {
           >
             Get in Touch
           </h2>
-          <ContactFromHireMe />
+          <ContactFrom />
         </section>
       </div>
     </>
