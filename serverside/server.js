@@ -40,7 +40,6 @@ app.post("/api/contact", async (req, res) => {
       },
     },
   };
-  console.log(params);
   try {
     const command = new SendEmailCommand(params);
     await sesClient.send(command);
@@ -52,7 +51,7 @@ app.post("/api/contact", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () =>
-  console.log(`Server running on http://localhost:${PORT}`)
-);
+// app.listen(PORT, () =>
+//   console.log(`Server running on http://localhost:${PORT}`)
+// );
 export default app;
