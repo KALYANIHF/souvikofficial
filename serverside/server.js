@@ -44,9 +44,9 @@ app.post("/api/contact", async (req, res) => {
     const command = new SendEmailCommand(params);
     await sesClient.send(command);
     res.status(200).json({ status: true, message: "Email sent successfully" });
-  } catch (error) {
-    console.error("Error sending email:", error);
-    res.status(500).json({ error: error.message + "Failed to send email" });
+  } catch (err) {
+    console.error("Error sending email:", err);
+    res.status(500).json({ error: err.message + "Failed to send email" });
   }
 });
 export default app;
