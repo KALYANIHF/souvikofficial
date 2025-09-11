@@ -22,6 +22,7 @@ A modern and responsive **personal portfolio website** built with **React.js**, 
 - **LocalStroage:** Local Storage for storing user preferences and theme settings for the current use.
 - **Version Control:** Git & GitHub
 - **Deployment:** Vercel / Netlify / GitHub Pages
+- **Service:** AWS (SES) / AWS SDK (simple email service)
 
 ## 📂 Folder Structure
 
