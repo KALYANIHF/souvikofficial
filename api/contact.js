@@ -1,6 +1,5 @@
 // api/contact.js
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
-import "@dotenvx/dotenvx/config";
 
 const sesClient = new SESClient({
   region: "ap-south-1",
