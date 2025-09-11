@@ -31,6 +31,11 @@ my-site/
 │   ├── index.html
 │   ├── favicon.ico
 │   └── assets/
+├── serverside/
+│   ├── contactFormHandler.js
+│   ├── index.js
+│   ├── sendMail.js
+│   └── server.js
 ├── src/
 |   ├── _data/
 |   ├── context/       # Global state management
@@ -125,12 +130,41 @@ my-site/
 
 🔗 [View Portfolio](https://souvikofficial.live)
 
+## 🛠️ Backend
+
+The backend of this portfolio is built with:
+
+- **Node.js** + **Express.js** → REST API handling
+- **MongoDB** → Storing user data and contact submissions
+- **Amazon SES (Simple Email Service)** → Sending emails securely
+- **Vercel** → Hosting backend serverless functions
+
+### ✉️ Contact Form
+
+The backend exposes a `/api/contact` route that:
+
+- Accepts `POST` requests with `name`, `email`, `subject`, and `message`
+- Sends emails via Amazon SES
+- Saves submissions into MongoDB for future reference
+
+---
+
+## 🔗 Frontend + Backend Together
+
+To make development easier, the project uses [`concurrently`](https://www.npmjs.com/package/concurrently) to run **both frontend (React + Vite)** and **backend (Express)** with a single command.
+
+### Run locally:
+
+```bash
+npm run dev
+```
+
 ## 👨‍💻 About Me
 
-**Name:** Souvik Mondal  
+**Name:** Souvik Mondal
 **Role:** Web Developer / Senior Software Engineer / DevOps Enthusiast
 **Skills:** React.js, JavaScript, HTML, CSS, Node.js, Express, MongoDB, TypeScript
-**Interests:** Building web apps, open-source contribution, and Backend Services and DevOps Practices.  
+**Interests:** Building web apps, open-source contribution, and Backend Services and DevOps Practices.
 **Location:** India
 
 ## 📫 Contact
@@ -144,3 +178,5 @@ my-site/
 ---
 
 ## ✨ Made with ❤️ by **Souvik Mondal**
+
+---
