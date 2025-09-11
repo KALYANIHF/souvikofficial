@@ -175,6 +175,12 @@ npm run dev
 - 🌍 Portfolio: [souvikofficial.live](https://souvikofficial.live)
 - My Photo Gallery: [https://www.pexels.com/@souvik-mondal-2955175/](https://www.pexels.com/@souvik-mondal-2955175/)
 
+### **Note**
+
+<i>I had to implement a serverless function due to hosting limitations on Vercel, which does not support a standalone Node.js server running in the background. To work around this, I created a serverless wrapper function for the backend to expose an endpoint. In the future, I plan to remove Express entirely and rely fully on serverless functions with the AWS SDK.
+
+If you want to use this project, you can use the serverless function provided in the code. Alternatively, if you prefer to use Express, the Express implementation is also included.</i>
+
 ---
 
 #### ✨ Made with ❤️ by **Souvik Mondal**
