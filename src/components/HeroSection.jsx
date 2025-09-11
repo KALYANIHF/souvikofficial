@@ -57,7 +57,7 @@ function HeroSection() {
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">100%</div>
                 <div className="mt-1 text-[11px] text-dark/60">
-                  Focused & Provide Solution to the table
+                   Consistent & reliable
                 </div>
               </div>
             </div>
