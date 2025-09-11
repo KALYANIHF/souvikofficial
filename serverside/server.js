@@ -1,11 +1,13 @@
 // serverside/server.js
 import express from "express";
 import cors from "cors";
+import "@dotenvx/dotenvx/config";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const sesClient = new SESClient({
   region: "ap-south-1", // your SES region
