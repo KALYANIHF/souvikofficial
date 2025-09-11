@@ -49,9 +49,4 @@ app.post("/api/contact", async (req, res) => {
     res.status(500).json({ error: "Failed to send email" });
   }
 });
-
-const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () =>
-//   console.log(`Server running on http://localhost:${PORT}`)
-// );
 export default app;
