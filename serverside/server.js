@@ -49,4 +49,9 @@ app.post("/api/contact", async (req, res) => {
     res.status(500).json({ error: err.message + "Failed to send email" });
   }
 });
+app.get("/api/info", (req, res) => {
+  res.json({
+    message: "Hello from server.js",
+  });
+});
 export default app;
