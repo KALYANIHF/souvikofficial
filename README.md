@@ -12,6 +12,12 @@ A modern and responsive **personal portfolio website** built with **React.js**, 
 - 📬 **Contact Section** – Easy ways to connect with me.
 - 🌙 **Dark/Light Mode** – Toggle between light and dark themes.
 - 📱 **Responsive Design** – Works seamlessly across desktop, tablet, and mobile devices.
+- <img src="https://api.iconify.design/logos:whatsapp-icon.svg" alt="WhatsApp" width="20" height="15"/>
+  **WhatsApp** - whats app direct integration to connect with me.
+- <img src="https://img.shields.io/badge/AWS_SES-FF9900" alt="AWS" width="20" height="15"/>
+  **AWS SES** - AWS simple email service integration.
+- <img src="https://api.iconify.design/twemoji:robot.svg" alt="ChatBot" width="20" height="15"/>
+  **Chat Bot Model** - A simple chat bot model for asking and knowing about my skills and knowledge and simple questions.
 
 ## 🛠️ Tech Stack
 
