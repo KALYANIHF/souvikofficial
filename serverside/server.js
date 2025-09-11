@@ -17,7 +17,7 @@ const sesClient = new SESClient({
   },
 });
 
-app.post("https://souvikofficial.live/api/contact", async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
   if (!name || !email || !subject || !message) {
     return res.status(400).json({ error: "All Fields are required" });
