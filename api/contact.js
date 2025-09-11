@@ -1,11 +1,12 @@
 // api/contact.js
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+// import "@dotenvx/dotenvx/config";
 
 const sesClient = new SESClient({
   region: process.env.MY_AWS_REGION,
   credentials: {
     accessKeyId: process.env.MY_AWS_ACCESS_KEY,
-    secretAccessKey: process.env.MY_AWS_SECRET_KEY, // make sure spelling is correct
+    secretAccessKey: process.env.MY_AWS_SECRECT_KEY, // make sure spelling is correct
   },
 });
 
