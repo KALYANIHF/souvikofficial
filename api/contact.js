@@ -2,10 +2,10 @@
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 const sesClient = new SESClient({
-  region: "ap-south-1",
+  region: process.env.MY_AWS_REGION,
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_KEY, // make sure spelling is correct
+    accessKeyId: process.env.MY_AWS_ACCESS_KEY,
+    secretAccessKey: process.env.MY_AWS_SECRET_KEY, // make sure spelling is correct
   },
 });
 
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
 
   const params = {
     Source: "supportinfo@souvikofficial.live",
-    Destination: { ToAddresses: [process.env.RECEIVER_EMAIL] },
+    Destination: { ToAddresses: [process.env.MY_RECEIVER_EMAIL] },
     ReplyToAddresses: [email],
     Message: {
       Subject: { Data: subject },
