@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileImage from "../assets/souvik.png";
-import PersonalCv from "../assets/myresume/SouvikFinalResume.pdf";
+import PersonalCv from "../assets/myresume/souvikResume.pdf";
 import { Link } from "react-router";
 import {
   FaGithub,
@@ -57,7 +57,7 @@ function HeroSection() {
               <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/5 py-4">
                 <div className="text-2xl font-bold">100%</div>
                 <div className="mt-1 text-[11px] text-dark/60">
-                   Consistent & reliable
+                  Consistent & reliable
                 </div>
               </div>
             </div>
