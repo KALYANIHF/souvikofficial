@@ -1,13 +1,7 @@
-import React from "react";
 import ProfileImage from "../assets/souvik.png";
 import PersonalCv from "../assets/myresume/souvikResume.pdf";
 import { Link } from "react-router";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaInstagramSquare,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { SiPexels, SiPostman } from "react-icons/si";
 function HeroSection() {
   const customIconSize = {
@@ -31,7 +25,7 @@ function HeroSection() {
             <div className="mt-6 flex gap-3">
               <a
                 href={PersonalCv}
-                download={"Souvik.pdf"}
+                download="Souvik.pdf"
                 className="inline-flex items-center justify-center rounded-lg bg-gray-200 dark:bg-white px-4 py-2 text-xs font-medium text-black hover:bg-gray-200"
               >
                 Download Resume
