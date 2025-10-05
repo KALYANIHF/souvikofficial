@@ -8,7 +8,7 @@ import {
   FaFacebook,
   FaInstagramSquare,
 } from "react-icons/fa";
-import { SiPexels } from "react-icons/si";
+import { SiPexels, SiPostman } from "react-icons/si";
 function HeroSection() {
   const customIconSize = {
     fontSize: "25px",
@@ -68,11 +68,8 @@ function HeroSection() {
                 </Link>
               </div>
               <div>
-                <Link
-                  to="https://www.facebook.com/share/1CoSfCYDNS/?mibextid=wwXIfr"
-                  target="_blank"
-                >
-                  <FaFacebook style={customIconSize} />
+                <Link to="https://postman.com/souvik-official" target="_blank">
+                  <SiPostman style={customIconSize} />
                 </Link>
               </div>
               <div>
