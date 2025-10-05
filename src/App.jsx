@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Home from "./pages/Home";
 import HireMe from "./pages/HireMe";
+import Projects from "./pages/Projects";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hireme" element={<HireMe />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </Router>

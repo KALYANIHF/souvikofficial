@@ -2,6 +2,8 @@ import React from "react";
 import generalinfoAppImg from "../assets/projectThumbnail/generalinfoApp.png";
 import vanillafeedbackApp from "../assets/projectThumbnail/vanillajsFeedbackApp.png";
 import reactFeedbackApp from "../assets/projectThumbnail/reactFeedbackApp.png";
+import mypersonalPortfolio from "../assets/projectThumbnail/souvikofficial.png";
+import Mentorgrid from "../assets/projectThumbnail/mentorgrid.png";
 
 function Projects() {
   return (
@@ -17,58 +19,7 @@ function Projects() {
       </div>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <article
-          className="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-white/5"
-          data-aos="fade-up"
-        >
-          <img
-            src={generalinfoAppImg}
-            alt="Project"
-            className="h-40 w-full object-cover"
-          />
-          <div className="p-6">
-            <h3 className="text-sm font-semibold">
-              Portfolio Website for Personal Info
-            </h3>
-            <p className="mt-2 text-sm text-black/70 dark:text-white/70">
-              This is my portfolio website (it is still under development and
-              improvement)
-            </p>
-            <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                Next.js
-              </span>
-              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                Javascript
-              </span>
-              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
-                HTML
-              </span>
-            </div>
-            <div className="mt-4 flex gap-2">
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-                href="#"
-              >
-                CSS
-              </a>
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-                href="#"
-              >
-                Json Mock Server
-              </a>
-            </div>
-            <a
-              href="https://my-resume-nine-topaz.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center justify-center rounded-lg border mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-            >
-              View Project →
-            </a>
-          </div>
-        </article>
-
+        {/* Project 1 react feedback app */}
         <article
           className="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-white/5"
           data-aos="fade-up"
@@ -99,20 +50,12 @@ function Projects() {
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 HTML
               </span>
-            </div>
-            <div className="mt-4 flex gap-2">
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-                href="#"
-              >
-                CSS
-              </a>
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-                href="#"
-              >
-                Javascript
-              </a>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Css
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Javascript (es6)
+              </span>
             </div>
             <a
               href="https://feedback-react-app-alpha.vercel.app/"
@@ -121,8 +64,18 @@ function Projects() {
             >
               View Project →
             </a>
+            <a
+              href="https://github.com/KALYANIHF/feedbackApp-react"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border ml-5 mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View GitHub →
+            </a>
           </div>
         </article>
+        {/* Project 1 react feedback app end */}
+
+        {/* Project 2 javascript feedback app */}
 
         <article
           className="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-white/5"
@@ -151,21 +104,14 @@ function Projects() {
               <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 CSS
               </span>
-            </div>
-            <div className="mt-4 flex gap-2">
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-                href="#"
-              >
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 Procedural
-              </a>
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-black/10 dark:border-white/10 bg-white/5 px-3 py-1.5 text-[11px] hover:bg-white/10"
-                href="#"
-              >
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
                 Functional
-              </a>
+              </span>
             </div>
+
             <a
               href="https://feedxinfo.netlify.app/"
               target="_blank"
@@ -173,8 +119,148 @@ function Projects() {
             >
               View Project →
             </a>
+            <a
+              href="https://github.com/KALYANIHF/feedbackApp-vanillaJs"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border ml-5 mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View GitHub →
+            </a>
           </div>
         </article>
+        {/* Project 2 javascript feedback app end */}
+
+        {/* Project 3 Node js backend Mentorgrid API app */}
+
+        <article
+          className="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-white/5"
+          data-aos="fade-up"
+          data-aos-delay="120"
+        >
+          <img
+            src={Mentorgrid}
+            alt="Project"
+            className="h-40 w-full object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-sm font-semibold">
+              Node Js Bootcamp management API
+            </h3>
+            <p className="mt-2 text-sm text-black/70 dark:text-white/70">
+              MentorGrid.live is a backend API built with **Node.js** and
+              **Express**, providing user authentication, course management, and
+              enrollment functionality. This project is designed for
+              bootcamp-style applications where admins or publisher can publish
+              courses and users can register, login, and enroll in thouse coures
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Node Js
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                ExpressJs
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Mongoose
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                AWS-SDk
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                AWS-SES
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Render
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                aws-cli
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                mongodb
+              </span>
+            </div>
+
+            <a
+              href="https://mentorgrid.live"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View Project →
+            </a>
+            <a
+              href="https://github.com/KALYANIHF/mentorgrid.live"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border ml-5 mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View GitHub →
+            </a>
+          </div>
+        </article>
+        {/* Project 3 Node js backend Mentorgrid API app End */}
+
+        {/* Project 4 React js portfolio website Personal */}
+
+        <article
+          className="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-white/5"
+          data-aos="fade-up"
+          data-aos-delay="120"
+        >
+          <img
+            src={mypersonalPortfolio}
+            alt="Project"
+            className="h-40 w-full object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-sm font-semibold">
+              Portfolio website for Personal Info
+            </h3>
+            <p className="mt-2 text-sm text-black/70 dark:text-white/70">
+              personal website where you can know more about me and details
+              about my work and projects and how can you contact me.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Core Javascript (ES6)
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                JSX
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Tailwind Css
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                React.js
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                aws-cli
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Lamda-function-aws
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                Node.js
+              </span>
+              <span className="rounded-md border border-black/10 dark:border-white/10 bg-white/5 px-2 py-0.5">
+                aws-ses
+              </span>
+            </div>
+            <a
+              href="https://souvikofficial.live"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View Project →
+            </a>
+            <a
+              href="https://github.com/KALYANIHF/souvikofficial"
+              target="_blank"
+              className="inline-flex items-center justify-center rounded-lg border ml-5 mt-5 px-3 py-1.5 text-[11px] hover:bg-white/10"
+            >
+              View GitHub →
+            </a>
+          </div>
+        </article>
+        {/* Project 4 React js portfolio website Personal end */}
       </div>
     </section>
   );
