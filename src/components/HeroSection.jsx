@@ -62,7 +62,7 @@ function HeroSection() {
                 </Link>
               </div>
               <div>
-                <Link to="https://postman.com/souvik-official" target="_blank">
+                <Link to="https://postman.com/souvik-dataverse" target="_blank">
                   <SiPostman style={customIconSize} />
                 </Link>
               </div>
