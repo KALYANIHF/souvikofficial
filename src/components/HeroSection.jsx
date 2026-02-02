@@ -68,7 +68,7 @@ function HeroSection() {
               </div>
               <div>
                 <Link
-                  to="https://www.linkedin.com/in/souvikmondal-unix/"
+                  to="https://www.linkedin.com/in/souvikofficial1/"
                   target="_blank"
                 >
                   <FaLinkedin style={customIconSize} />
@@ -84,7 +84,7 @@ function HeroSection() {
               </div>
               <div>
                 <Link
-                  to="https://www.pexels.com/@souvik-mondal-2955175/"
+                  to="https://www.pexels.com/@souvikofficial/"
                   target="_blank"
                 >
                   <SiPexels style={customIconSize} />
