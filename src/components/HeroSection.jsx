@@ -57,7 +57,7 @@ function HeroSection() {
             </div>
             <div className="socialIcon mt-10 grid grid-cols-5 gap-1 text-center">
               <div>
-                <Link to="https://github.com/KALYANIHF" target="_blank">
+                <Link to="https://github.com/souvikofficial1" target="_blank">
                   <FaGithub style={customIconSize} />
                 </Link>
               </div>
